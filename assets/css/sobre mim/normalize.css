@@ -1,0 +1,278 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Estilização do Documento */
+
+      /* Estilo para a tela de carregamento */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+
+
+/* From Uiverse.io by simjohnb */ 
+.pyramid-loader {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.pyramid-loader .wrapper .side {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: conic-gradient(#b527ee, #6D2398, #b527ee);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: conic-gradient(#6D2398, #b527ee, #6D2398);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: conic-gradient(#b527ee, #6D2398, #b527ee);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: conic-gradient(#6D2398, #b527ee, #6D2398);
+}
+
+.pyramid-loader .wrapper .shadow {
+  width: 60px;
+  height: 60px;
+  background: #6D2398;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(90deg) translateZ(-40px);
+  filter: blur(12px);
+}
+
+html {
+    line-height: 1.15; /* Ajusta a altura da linha em todos os navegadores. */
+    -webkit-text-size-adjust: 100%; /* Previne ajustes no tamanho do texto em iOS. */
+  }
+  
+  body {
+    margin: 0; /* Remove a margem padrão dos navegadores. */
+  }
+  
+  main {
+    display: block; /* Garante que o `<main>` seja renderizado corretamente no IE. */
+  }
+  
+  h1 {
+    font-size: 2em; /* Ajusta o tamanho da fonte para cabeçalhos `<h1>`. */
+    margin: 0.67em 0; /* Define margens consistentes para o `<h1>`. */
+  }
+  
+  /* Agrupamento de conteúdo */
+  
+  hr {
+    box-sizing: content-box; /* Define o box-sizing correto no Firefox. */
+    height: 0; /* Remove altura extra. */
+    overflow: visible; /* Mostra transbordamento no Edge e IE. */
+  }
+  
+  pre {
+    font-family: poppins, monospace; /* Corrige a herança e o escalonamento da fonte. */
+    font-size: 1em; /* Corrige o tamanho da fonte em `<pre>`. */
+  }
+  
+  /* Semântica de Texto */
+  
+  a {
+    background-color: transparent; /* Remove o fundo cinza em links ativos no IE10. */
+  }
+  
+  abbr[title] {
+    border-bottom: none; /* Remove sublinhados em navegadores antigos. */
+    text-decoration: underline dotted; /* Adiciona sublinhado pontilhado. */
+  }
+  
+  b, strong {
+    font-weight: bolder; /* Ajusta o peso da fonte para elementos em negrito. */
+  }
+  
+  code, kbd, samp {
+    font-family: monospace, monospace; /* Define fonte monoespaçada. */
+    font-size: 1em; /* Corrige o tamanho da fonte. */
+  }
+  
+  small {
+    font-size: 80%; /* Reduz o tamanho da fonte em `<small>`. */
+  }
+  
+  sub, sup {
+    font-size: 75%; /* Ajusta o tamanho da fonte. */
+    line-height: 0; /* Remove impacto na altura da linha. */
+    vertical-align: baseline; /* Define o alinhamento vertical. */
+  }
+  
+  sub {
+    bottom: -0.25em; /* Ajusta a posição do subscrito. */
+  }
+  
+  sup {
+    top: -0.5em; /* Ajusta a posição do sobrescrito. */
+  }
+  
+  /* Conteúdo Embutido */
+  
+  img {
+    border-style: none; /* Remove bordas de imagens dentro de links no IE10. */
+  }
+  
+  /* Formulários */
+  
+  button, input, optgroup, select, textarea {
+    font-family: inherit; /* Herdar fonte do pai. */
+    font-size: 100%; /* Usa o tamanho de fonte padrão. */
+    line-height: 1.15; /* Define altura de linha padrão. */
+    margin: 0; /* Remove margens padrão. */
+  }
+  
+  button, input {
+    overflow: visible; /* Garante que o transbordamento seja visível. */
+  }
+  
+  button, select {
+    text-transform: none; /* Remove transformação de texto herdada. */
+  }
+  
+  button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button; /* Corrige aparência em iOS e Safari. */
+  }
+  
+  button::-moz-focus-inner, [type="button"]::-moz-focus-inner {
+    border-style: none; /* Remove borda interna no Firefox. */
+    padding: 0; /* Remove preenchimento interno. */
+  }
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em; /* Ajusta o preenchimento no Firefox. */
+  }
+  
+  legend {
+    box-sizing: border-box; /* Corrige dimensionamento. */
+    color: inherit; /* Herda cor. */
+    display: table; /* Alinha texto corretamente. */
+    white-space: normal; /* Permite quebra de linha. */
+  }
+  
+  textarea {
+    overflow: auto; /* Garante rolagem automática. */
+  }
+  
+  [type="checkbox"], [type="radio"] {
+    box-sizing: border-box; /* Corrige dimensionamento. */
+    padding: 0; /* Remove preenchimento padrão. */
+  }
+  
+  [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto; /* Corrige o cursor nos botões de incremento/decremento. */
+  }
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* Ajusta aparência de campos de busca. */
+    outline-offset: -2px; /* Corrige estilo de contorno. */
+  }
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; /* Remove preenchimento interno em macOS. */
+  }
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* Ajusta aparência no Safari. */
+    font: inherit; /* Herda a fonte do elemento pai. */
+  }
+  
+  /* Interativos */
+  
+  details {
+    display: block; /* Garante que `<details>` seja renderizado como bloco. */
+  }
+  
+  summary {
+    display: list-item; /* Garante que `<summary>` seja renderizado como item de lista. */
+  }
+  
+  /* Diversos */
+  
+  template {
+    display: none; /* Garante que `<template>` não seja exibido. */
+  }
+  
+  [hidden] {
+    display: none; /* Esconde elementos com o atributo `hidden`. */
+  }
+  
+
+  .play-button{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: linear-gradient(60deg, #b527ee, #78059b);
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+    align-items: center;
+    border: 0;
+  }
+
+  .play-button:is(:hover, :focus) {
+    transform: scale(1.2);
+  }
+
+  @keyframes pulse {
+    100% {
+      box-shadow: 0 0 0 45px rgba(193,244,246,0);
+    }
+  }
+  
