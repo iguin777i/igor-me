@@ -126,6 +126,9 @@
    .single-vimeo-background {
       --parent-height: 100;
    }
+   .total{
+      display: none;
+   }
 }
 
 /* ------------------------- Single - Vimeo Player -------------------------------------------------- */
@@ -200,6 +203,8 @@
    }
 }
 
+
+
 /* Interface */
 
 .single-vimeo-player .vimeo-overlay-interface {
@@ -223,6 +228,9 @@
       opacity: 0 !important;
    }
 }
+
+
+
 
 .single-vimeo-player .vimeo-overlay-interface * {
    pointer-events: all;
@@ -818,6 +826,10 @@
    .flickity-slider-group.four-col:is(.count-1)[data-flickity-slider-type="cards"] {
       --columns: 1;
    }
+
+   .total{
+      display: none;
+   }
 }
 
 /* ------------------------- Flickity Slider - Custom: Cards Three Col -------------------------------------------------- */
@@ -844,6 +856,7 @@
    .flickity-slider-group.three-col:is(.count-1, .count-2, .count-3)[data-flickity-slider-type="cards"] {
       --columns: 3;
    }
+   
 }
 
 @media (min-width: 541px) and (max-width: 840px) {
@@ -860,6 +873,9 @@
 
    .flickity-slider-group.three-col:is(.count-1, .count-2)[data-flickity-slider-type="cards"] {
       --columns: 2;
+   }
+   .total{
+      display: none;
    }
 }
 
@@ -878,6 +894,9 @@
    .flickity-slider-group.three-col:is(.count-1)[data-flickity-slider-type="cards"] {
       --columns: 1;  
    } 
+   .total{
+      display: none;
+   }
 }
 
 /* ------------------------- Flickity Slider - Custom: Cards Two Col (Vimeo) -------------------------------------------------- */
