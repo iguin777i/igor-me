@@ -52,7 +52,7 @@
 
    <header class="header" id="header">
       <nav class="nav container">
-         <a href="#" class="nav__logo">
+         <a href="index.html" class="nav__logo">
             <img src="assets/img/logo1.png" alt="">
          </a>
 
@@ -62,7 +62,7 @@
                   <a href="index.html" class="nav__link">Inicio</a>
                </li>
                <li class="nav__item">
-                  <a href="#specs" class="nav__link">Habilidades</a>
+                  <a href="#specs" class="nav__link">Contatos</a>
                </li>
                <li class="nav__item">
                   <a href="sobre_mim.html" class="nav__link">Quem eu sou</a>
@@ -90,7 +90,7 @@
                            points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37">
                         </polyline>
                      </svg>Ver projetos</span>
-                  </a>
+               </a>
 
 
 
@@ -152,7 +152,7 @@
                      <div class="logo-visual">
                         <div class="visual">
                            <div class="overlay overlay-logo">
-                              
+
                            </div>
                         </div>
                         <div class="text">
@@ -263,7 +263,8 @@
                   </div>
                   <div class="col col-text animate-scroll-fade-in">
                      <div class="col-row styled-col">
-                        <p>Trabalhei no desenvolvimento de vídeos, fotos, flayers e live's para redes sociais, cobrindo o evento em todos os seus dias.</p>
+                        <p>Trabalhei no desenvolvimento de vídeos, fotos, flayers e live's para redes sociais, cobrindo
+                           o evento em todos os seus dias.</p>
                      </div>
                   </div>
                </div>
@@ -288,9 +289,9 @@
                            <h2 class="s" style="color: #6D2398;">Sobre o evento</h2>
                         </div>
                         <div class="col-row col-row-text styled-content animate-scroll-fade-in">
-                           <p>Torneio Esportivo e Cultural (TEC) é um evento promovido pela Etec Paraisópolis, 
-                              onde as turmas dos cursos técnicos se enfrentam em diversas modalidades, semelhante 
-                              a um interclasse. Além das competições esportivas, o torneio inclui categorias como 
+                           <p>Torneio Esportivo e Cultural (TEC) é um evento promovido pela Etec Paraisópolis,
+                              onde as turmas dos cursos técnicos se enfrentam em diversas modalidades, semelhante
+                              a um interclasse. Além das competições esportivas, o torneio inclui categorias como
                               poesia, dança, e-sports, entre outras.
                            </p>
                         </div>
@@ -321,7 +322,7 @@
                            data-vimeo-status-loaded="false" data-vimeo-status-play="false"
                            data-vimeo-status-muted="false" data-vimeo-status-hover="false">
                            <div class="scroll-to-target"></div>
-                        
+
                            <div class="overlay vimeo-overlay-loading"><svg version="1.1" id="L9"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                  y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
@@ -356,7 +357,7 @@
          <section class="section default-block block-stats block_2" data-theme-section="dark" data-bg-section="dark">
             <div class="overlay-gradient"></div>
             <div class="container large">
-               
+
             </div>
          </section>
          <section class="section default-block block-full-image block_3" data-theme-section="dark"
@@ -366,8 +367,7 @@
                   <div class="col col-small-image">
                      <figure class="ratio-figure">
                         <div class="styled-video playpauze overlay">
-                           <video class="overlay" src="assets/img/tec/68-IMG_1838.mp4" loop muted playsinline
-                              autoplay>
+                           <video class="overlay" src="assets/img/tec/68-IMG_1838.mp4" loop muted playsinline autoplay>
                            </video>
                         </div>
                      </figure>
@@ -394,8 +394,9 @@
                      <div class="col-row col-row-image">
                         <figure class="ratio-figure">
                            <div class="styled-video playpauze overlay">
-                              <video class="overlay" src="assets/img/tec/Snapinst.app_video_AQPK8HkV-5JXQJ4HfanLPjhSOUKbcyV36VMf0LLkTePNLuUFbR2MVkKdOsYn-1Jc-NkflNNOnAXjDvE-tIBYxf2ORKucZx0Wfx14VBI.mp4" loop muted playsinline
-                                 autoplay>
+                              <video class="overlay"
+                                 src="assets/img/tec/Snapinst.app_video_AQPK8HkV-5JXQJ4HfanLPjhSOUKbcyV36VMf0LLkTePNLuUFbR2MVkKdOsYn-1Jc-NkflNNOnAXjDvE-tIBYxf2ORKucZx0Wfx14VBI.mp4"
+                                 loop muted playsinline autoplay>
                            </div>
                         </figure>
 
@@ -404,7 +405,7 @@
                         <div class="col-row col-row-title animate-scroll-fade-in">
                            <h2 class="s">Esporte + Cultura =🤩</h2>
                         </div>
-               
+
                      </div>
                   </div>
                   <div class="col col-big-image">
@@ -474,18 +475,19 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
             <script>
                document.addEventListener("DOMContentLoaded", function () {
-                   var elem = document.querySelector(".carousel");
-                   if (elem) {
-                       new Flickity(elem, {
-                           wrapAround: true,
-                           autoPlay: 3000,
-                           prevNextButtons: false
-                       });
-                   }
+                  var elem = document.querySelector(".carousel");
+                  if (elem) {
+                     new Flickity(elem, {
+                        wrapAround: true,
+                        autoPlay: 3000,
+                        prevNextButtons: false,
+                        pageDots: false
+                     });
+                  }
                });
             </script>
-            
-            
+
+
          </section>
 
 
